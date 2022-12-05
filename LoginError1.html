@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="css/Login.css">
+</head>
+<body>
+	<form action="Login.jsp" method="post">
+	<div class="container">
+		<div class="loginbox">
+			<h2>Login</h2>
+				<div class="customselect">
+					<div class="select">
+  					<select  name="utype" required>
+    					<option value="" selected disabled>Select Account Type</option>
+    					<option value="1">Customer</option>
+    					<option value="2">Seller</option>
+  					</select>
+					</div>
+				</div>
+			<input type="text" name="userid" placeholder="Enter User ID" required>
+			<input type="password" name="password" placeholder="Enter Password" required>
+			<h3>Invalid Password</h3>
+			<input type="submit" value="Login">
+		</div>
+	</div>
+	</form>
+</body>
+</html>
